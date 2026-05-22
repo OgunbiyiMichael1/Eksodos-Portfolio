@@ -104,9 +104,23 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 14px 45px rgba(0, 0, 0, 0.3);
 }
-[data-theme="dark"] .filter.active
-
-[data-theme="dark"] .main-nav a,
+[data-theme="dark"] .filter.active {
+  background: linear-gradient(120deg, var(--brand-red), var(--brand-purple));
+  color: #ffffff;
+  border-color: transparent;
+}
+[data-theme="dark"] .main-nav {
+  background: #161627;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+[data-theme="dark"] .main-nav a {
+  color: #ffffff;
+}
+[data-theme="dark"] .main-nav a:nth-child(1),
+[data-theme="dark"] .main-nav a:nth-child(3),
+[data-theme="dark"] .main-nav a:nth-child(6) {
+  color: var(--brand-red);
+}
 [data-theme="dark"] h1,
 [data-theme="dark"] h2,
 [data-theme="dark"] h3,
@@ -269,12 +283,7 @@ a {
   min-height: 760px;
   display: flex;
   align-items: center;
-  background-image: linear-\gradient(90deg, rgba(18, 18, 40, .64) 0%, rgba(18, 18, 40, .50) 40%, rgba(18, 18, 40, .24) 100%), url('pexels-photo-3184291.webp');
-  background-size: cover;
-  background-position: center right;
-  background-blend-mode: multiply;
-  padding: 180px 56px 60px;
-  overflow: hidden;
+  background-image: linear-gradient(90deg, rgba(18, 18, 40, .64) 0%, rgba(18, 18, 40, .50) 40%, rgba(18, 18, 40, .24) 100%), url('pexels-photo-3184291.webp');
 }
 
 .hero-content {

@@ -9,10 +9,17 @@ if (year) year.textContent = new Date().getFullYear();
 menuToggle?.addEventListener('click', () => {
   const isOpen = mainNav.classList.toggle('open');
   menuToggle.setAttribute('aria-expanded', String(isOpen));
+  menuToggle.textContent = isOpen ? '✕' : '☰';
+  menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
 });
 
 document.querySelectorAll('.main-nav a').forEach(link => {
-  link.addEventListener('click', () => mainNav.classList.remove('open'));
+  link.addEventListener('click', () => {
+    mainNav.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.textContent = '☰';
+    menuToggle.setAttribute('aria-label', 'Open menu');
+  });
 });
 
 // Theme toggle
