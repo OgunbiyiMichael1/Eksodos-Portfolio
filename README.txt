@@ -1,5 +1,8 @@
 Eksodos Systems Infotech - Portfolio Web Page
 
+Description: 
+Corporate portfolio website for Eksodos Systems Infotech showcasing ICT services, technology solutions, professional training programs, and digital transformation expertise.
+
 This package is the company portfolio. A professional, responsive web page using the Eksodos brand identity.
 
 Files included:
@@ -13,7 +16,7 @@ How to edit:
 3. Update styles.css if you want to adjust colors, spacing or layout.
 
 Recommended website location:
-https://www.eksodos.com.ng/portfolio
+https://eksodos-portfolio.vercel.app/
 
 Contact information used:
 Eksodos Systems Infotech
