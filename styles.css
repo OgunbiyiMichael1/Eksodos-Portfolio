@@ -280,7 +280,7 @@ a {
 
 .hero {
   position: relative;
-  min-height: 760px;
+  height: 108vh;
   display: flex;
   align-items: center;
   background-image: linear-gradient(90deg, rgba(18, 18, 40, .64) 0%, rgba(18, 18, 40, .50) 40%, rgba(18, 18, 40, .24) 100%), url('pexels-photo-3184291.webp');
@@ -295,8 +295,10 @@ a {
 }
 @media (max-width: 680px) {
   .hero-content {
-   padding: 0;
-    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 .eyebrow {
@@ -304,11 +306,11 @@ a {
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding-top: 50px;
+  padding-top: 35px;
 }
 
 h1 {
-  font-size: clamp(28px, 7.5vw, 78px);
+  font-size: clamp(50px, 7.5vw, 88px);
   line-height: .98;
   margin: 10px 0 34px;
   letter-spacing: -3px;
@@ -318,9 +320,7 @@ h1 {
     font-size: clamp(44px, 8vw, 48px);
     letter-spacing: -1.5px;
   }
-  .eyebrow{
-    padding-top: 0px;
-  }
+  
 }
 h1 span {
   color: var(--brand-blue);
