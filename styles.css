@@ -288,25 +288,40 @@ a {
 
 .hero-content {
   position: relative;
+  padding: 85px 79px 60px;
   z-index: 2;
   max-width: 840px;
   color: #fff;
 }
-
+@media (max-width: 680px) {
+  .hero-content {
+   padding: 0;
+    max-width: none;
+  }
+}
 .eyebrow {
   color: rgba(255, 255, 255, .95);
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
+  padding-top: 50px;
 }
 
 h1 {
-  font-size: clamp(48px, 7.5vw, 92px);
+  font-size: clamp(28px, 7.5vw, 78px);
   line-height: .98;
   margin: 10px 0 34px;
   letter-spacing: -3px;
 }
-
+@media (max-width: 680px) {
+  h1 {
+    font-size: clamp(44px, 8vw, 48px);
+    letter-spacing: -1.5px;
+  }
+  .eyebrow{
+    padding-top: 0px;
+  }
+}
 h1 span {
   color: var(--brand-blue);
   display: block;
@@ -987,7 +1002,13 @@ body.editing .editable {
   gap: 12px;
   margin-bottom: 15px;
 }
-
+@media (max-width: 680px) {
+  .social-section {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+}
 .social-links a{
   background-color: var(--footer-panel);
   border-radius: 50%;
